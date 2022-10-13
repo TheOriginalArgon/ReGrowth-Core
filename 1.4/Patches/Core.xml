@@ -657,6 +657,31 @@
 					</li>
 				</value>
 			</li>
+			<!-- ================================ Add ambient sounds to trees ====================== -->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>/Defs/ThingDef[@Name="TreeBase"]/comps</xpath>
+						<success>Invert</success>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[@Name="TreeBase"]</xpath>
+						<value>
+							<comps></comps>
+						</value>
+					</li>
+				</operations>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="TreeBase"]/comps</xpath>
+				<value>
+					<li Class="ReGrowthCore.CompProperties_TreeAmbientSound">
+						<ambientSound>Toxifier_Working</ambientSound>
+						<minWindSpeed>0.8</minWindSpeed>
+					</li>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

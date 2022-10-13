@@ -308,6 +308,8 @@
     <Compile Include="Comps\CompAutumnLeavesSpawner.cs" />
     <Compile Include="Comps\CompLeavesSpawner.cs" />
     <Compile Include="Comps\CompLeavesSpawnerBase.cs" />
+    <Compile Include="Comps\CompTreeAmbientSound.cs" />
+    <Compile Include="MapComponent_RegrowthCore.cs" />
     <Compile Include="Events\GameCondition_NoSunlightDark.cs" />
     <Compile Include="HarmonyPatches\CanEverPlantAt_Patch.cs" />
     <Compile Include="HarmonyPatches\CompPowerPlantWind_CompTick_Patch.cs" />
